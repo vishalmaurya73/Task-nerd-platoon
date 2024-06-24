@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task Nerd Platoon</title>
+    <style>
+.slider-outer{
+  height: auto;
+  width: 100%;
+  background-color: #456;
+
+  display: grid;
+      gap: 20px;
+      
+}
+
+.slider-inner{
+  height: 100%;
+  width: 100%;
+  display: flex;
+      flex-direction: column;
+      position: relative;
+      
+
+}
+.slider-inner img{
+  width: 100%;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5 ;
+background-size: contain;
+box-shadow: 1px 1px 10px black;
+filter: blur(1px);
+
+}
+
+.image-card-text{
+      position: absolute;
+      top: 5%;
+      color: #0e9df0;
+      padding: 2rem;
+      text-shadow: white;
+     
+      
+    }
+    .image-card-text h1{
+        
+      line-height: 0.9;
+      padding-left: 2rem;
+      font-size: 3.2rem;
+      font-weight: 700;
+      
+      
+    }
+
+
+    .image-card-text h2{
+        font-size: 0.95em;
+      line-height: 1.2;
+      padding-left: 2rem;
+      
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      opacity: 1; 
+      color: whitesmoke;
+       font-size: 1.2em;
+      
+    }
+
+    .image-card-text p{
+        font-size:0.9rem;
+      line-height: 1.2;
+    }
+
+    .third-row{
+      height: 10rem;
+      width: 100%;
+      background-color: white;
+    }
+
+    .third-row h1{
+      text-align: center;
+      color: #0e9df0;
+      font-size: 4rem;
+      font-weight: 700;
+      margin: 1.5rem;
+     
+    }
+
+    .fifth-row{
+      height: 10rem;
+      width: 100%;
+      /* background-color: wheat; */
+     margin-top: 6rem;
+    }
+
+    .fifth-row h1{
+      text-align: center;
+      color: #0e9df0;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 0.9;
+      
+     
+    }
+
+
+.six-row h6::first-letter{
+ color: #0e9df0;
+}
+
+    .seven-row{
+      height: 10rem;
+      width: 100%;
+     
+      background-color: #122a4a;
+     margin-top: 5rem;
+    }
+
+    .seven-row h1{
+      /* text-align: center; */
+      color: #0e9df0;
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 60px;
+      padding-top: 60px;
+    
+     
+    }
+
+    .eight-row{
+      background-color: #122a4a;
+    }
+
+    
+    .nine-row{
+      background-color: #122a4a;
+    }
+
+   
+    
+    
+    .ten-row{
+      background-color: #122a4a;
+    }
+
+ 
+
+
+   
+
+  
+
+
+
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    
+<!-- navbar start -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      
+      <img src="logo-with-stroke 1.png" alt="logo" width="160" height="60" class="my-2 mx-4">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active mx-2 fs-6 text-primary" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active mx-2 fs-6" aria-current="page" href="#">Company Info</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active mx-2 fs-6" aria-current="page" href="#">Mobile-Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active mx-2 fs-6" aria-current="page" href="#">Auto Glass Repair</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active mx-2 fs-6" aria-current="page" href="#">Life Time Guarantee</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active mx-2 fs-6" aria-current="page" href="#">FAQs</a>
+          </li>
+
+
+        </ul>
+        <form class="d-flex" role="search">
+          
+          <button class="btn btn-primary mx-4" type="submit"><i class="fa-solid fa-phone mx-2"></i>Call For a Free Quote</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!-- Nav bar End -->
+
+
+<br><br><br><br>
+
+<!-- --------------- Image Second Row start ---------------------------------------- -->
+<div class="slider-outer">
+  <div class="slider-inner">
+    <img src="12.jpg" alt="image">
+    <div class="image-card-text">
+        
+    <h1>Auto Glass </h1>
+    <h1>Repair Services</h1>
+          <br>
+          
+          <h2>Toronto, Scarborough,</h2>
+          <h2>Richmond Hill, North York</h2> 
+           <h2> & Markham</h2>
+           <br>
+
+         
+          <h1 style="color: #0e9df0; line-height: 0.9;padding-left: 2rem;font-size: 2rem;font-weight: 700;">We Pay Deductibles</h1>
+         
+          <br>
+         <h5 style="margin-left: 2rem; border: 2px solid #0e9df0; padding: 0.5rem; text-align: center;">CONTACT US NOW!</h5>
+  
+
+  
+       
+        </div>
+        
+  </div>
+ 
+</div>
+ <!-- --------------- Image Second Row End ---------------------------------------- -->
+
+ <!-- ------------Third Row start-------------------------------------------- -->
+
+<div class="third-row">
+  <h1>Our Services</h1>
+</div>
+
+ <!-- -------------Third row End----------------------------------------------- -->
+
+ <!-- -------------Fourth Row- start---------------------- -->
+
+ <div class="row row-cols-1 row-cols-md-3 g-5 mx-5">
+  <div class="col">
+    <div class="card h-100">
+      <img src="Rectangle 1.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Mobile Service</h3><br>
+        <p class="card-text">Our experienced auto glass specialist will visit you at
+          any location, at a time that is most convenient for
+          you, to repair or replace your windshield. At Sprint
+          Auto Glass we provide and install (OEM) Original
+          Equipment Manufacturer glass. We always stand
+          behind our auto glass products with our lifetime
+          warranty.
+          Sprint can help you through all your windshield
+          insurance claims making the process as stress-free
+          as possible.</p>
+       
+          <button style="height: 2.5rem; width: 100%; background-color: #0e9df0; color: white; border: none; border-radius: 5px; font-size: 1.29rem; margin-top: 2rem;">Learn More</button>
+          
+      </div>
+      
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="Rectangle 1 (1).png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Auto Glass Repair</h3><br>
+        <p class="card-text">Auto glass repair services in North York, Toronto,
+          Scarborough, Thornhill & Markham.
+          Having a broken windshield on your vehicle can be an
+          unexpected expense and inconvenience, but at Sprint
+          Auto Glass we will repair your auto glass safely,
+          conveniently, quickly, and economically.
+          A small chip or crack that is ignored can spread
+          across the entire windshield if not repaired promptly.</p><br>
+          <button style="height: 2.5rem; width: 100%; background-color: #0e9df0; color: white; border: none; border-radius: 5px; font-size: 1.29rem; margin-top: 2rem;">Learn More</button>
+          
+      </div>
+     
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="Rectangle 1 (2).png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Lifetime Guarantee</h3><br>
+        <p class="card-text">. At Sprint Auto Glass we stand behind our work.<br>
+          . Workmanship is guaranteed for as long as you
+          own your vehicle.<br>
+          . We give you, in writing, a guarantee on
+          windshield, back glass, and side window
+          replacements.<br>
+          . All installations done to OEM specifications.</p><br><br>
+          <button style="height: 2.5rem; width: 100%; background-color: #0e9df0; color: white; border: none; border-radius: 5px; font-size: 1.29rem; margin-top: 2rem;">Learn More</button>
+          
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+ <!-- --------------Fourth Row End---------------------- -->
+
+<!-- ------------Fifth Row start-------------------------------------------- -->
+
+<div class="fifth-row">
+  <h1>Locations That We Service</h1>
+  <h1>For Auto Glass Repairs & Replacements:</h1>
+</div>
+
+ <!-- -------------Fifth row End----------------------------------------------- -->
+
+
+ <!-- ----------------Six Row start ---------------------------------------------- -->
+
+ <div class="row six-row">
+  <div class="col-md-2 text-center mt-4">
+    
+        <span><h6>1.Toronto</h6></span> 
+        <span><h6>7. Mississagua</h6></span> 
+        <span><h6>13. Scarborough</h6></span> 
+        <span><h6>19. North York</h6></span> 
+        <span><h6>25. East York</h6></span> 
+        <span><h6>31. Etobicoke</h6></span> 
+          
+  </div>
+  <div class="col-md-2 text-center mt-4">
+    
+    <span><h6>2. Woodbridge</h6></span> 
+    <span><h6>8. Brampton</h6></span> 
+    <span><h6>14. Caledon</h6></span> 
+    <span><h6>20. Vaughan</h6></span> 
+    <span><h6>26. Markham</h6></span> 
+    <span><h6>32. Richmond Hill</h6></span> 
+    
+      
+</div>
+<div class="col-md-2 text-center mt-4">
+    
+  <span><h6>3. Aurora</h6></span> 
+  <span><h6>9. Newmarket</h6></span> 
+  <span><h6>15. King</h6></span> 
+  <span><h6>21. Stouffville</h6></span> 
+  <span><h6>27. East Gwillimbury</h6></span> 
+  <span><h6>33. Georgina</h6></span> 
+    
+</div>
+<div class="col-md-2 text-center mt-4">
+    
+  <span><h6>4. Brock</h6></span> 
+  <span><h6>10. Uxbridge</h6></span> 
+  <span><h6>16. Scugog</h6></span> 
+  <span><h6>22. Pickering</h6></span> 
+  <span><h6>28. Ajax</h6></span> 
+  <span><h6>34. Whitby</h6></span> 
+    
+</div>
+<div class="col-md-2 text-center mt-4">
+    
+  <span><h6>5. Oshawa</h6></span> 
+  <span><h6>11. Clarlington</h6></span> 
+  <span><h6>17. Oakville</h6></span> 
+  <span><h6>23. Burlington</h6></span> 
+  <span><h6>29. Milton</h6></span> 
+  <span><h6>35. Halton Hills</h6></span> 
+    
+</div>
+<div class="col-md-2 text-center mt-4">
+    
+  <span><h6>6. Georgetown</h6></span> 
+  <span><h6>12. Shelbourne</h6></span> 
+  <span><h6>18. Orangeville</h6></span> 
+  <span><h6>24. Bolton</h6></span> 
+  <span><h6>30. Concord</h6></span> 
+  
+    
+</div>
+
+</div>
+
+ <!-- ----------------Six Row End-------------------------------------------------- -->
+
+
+ <!-- --------Seventh Row start ------------------------------------------ -->
+
+ <div class="seven-row">
+  <h1>Contact Us For An Instant Free Quote!</h1>
+</div>
+
+ <!-- ----------Seven Row End----------------------------------------- -->
+
+
+ <!-- -----------Eight Row start------------------------------------ -->
+
+ <div class="row eight-row text-white">
+  <div class="col-md-3">
+  <h6 class="mx-5 my-2 mb-4">Customer information</h6>
+      <input type="text" class="form-control mb-3 pl-3" placeholder="Name">
+      <input type="text" class="form-control mb-3" placeholder="Telephone">
+      <input type="text" class="form-control mb-3" placeholder="Location">
+      <input type="text" class="form-control mb-3" placeholder="Email">
+  </div>
+  <div class="col-md-3">
+  <h6 class="mx-5 my-2 mb-4">Vehicle information</h6>
+      <input type="text" class="form-control mb-3" placeholder="Year">
+      <input type="text" class="form-control mb-3" placeholder="Make">
+      <input type="text" class="form-control mb-3" placeholder="Comment">
+      <input type="text" class="form-control mb-3" placeholder="Service">
+  </div>
+  <div class="col-md-6 mt-5 text-center my-4">
+      <p>It was our pleasure to assist you today, and we look
+        forward to providing you with a great windshield
+        replacement or repair. If your plans change, please
+        contact us.</p>
+
+        <p>All Content Provided is strictly confidential and will not
+          be sent to any third party.</p> 
+          <h6>We honor all requests, please allow us 24
+            hours to respond</h6>
+  </div>
+</div>
+
+ <!-- -----------Eight Row End-------------------------------------------- -->
+
+
+
+ <!-- Row 9: Button start-------------------------- -->
+ <div class="row nine-row text-white">
+  <div class="col-5 text-center mb-4">
+    <button style="height: 2.5rem; width: 100%; background-color: #0e9df0; color: white; border: none; border-radius: 5px; font-size: 1.29rem; margin-top: 2rem; margin-left: 70%;">Learn More</button>
+          
+  </div>
+</div>
+
+<!-- ---------Row 9 -End---------------- -->
+
+
+ <!-- Row 10: Footer Text -->
+ <div class="row text-center ten-row text-white fs-6">
+  <div class="col-md-5 mt-5">
+      <p style="float: right;">Copyright 2023 | Sprint Auto Glass | All rights reserved</p>
+  </div>
+  <div class="col-md-1 mt-5">
+      <p>Sitemap</p>
+  </div>
+  <div class="col-md-2 mt-5">
+      <p>Privacy Policy</p>
+  </div>
+  <div class="col-md-2 mt-5">
+      <p>SEO Service by Qode Media</p>
+  </div>
+</div>
+</div>
+
+
+
+<!-- -----------10 Row End----------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
